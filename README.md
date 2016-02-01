@@ -16,15 +16,13 @@ npm i -S start-simple-logger
 // tasks/index.js
 import start from 'start';
 import logger from 'start-simple-logger';
+import files from 'start-files';
+import clean from 'start-clean';
 
-export function temp() {
-    return start(logger)(
-        function beep(resolve, reject) {
-            resolve(':)');
-        },
-        function boop(resolve, reject) {
-            reject(':(');
-        }
+export function cleanBuild() {
+    return start(logger())(
+        files('build/'),
+        clean()
     );
 }
 ```
@@ -33,17 +31,24 @@ export function temp() {
 // package.json
 "scripts": {
   "task": "babel-node node_modules/.bin/start tasks/",
-  "temp": "npm run task temp"
+  "clean-build": "npm run task cleanBuild"
 }
 ```
 
 ```
-$ npm run temp
+$ npm run clean-build
 
-[beep]: start
-[beep]: :)
-[beep]: done
-[boop]: start
-[boop]: :(
-[boop]: error
+[files]: start
+[files]: /beep/boop/build
+[files]: done
+[clean]: start
+[clean]: /beep/boop/build
+[clean]: done
 ```
+
+## Arguments
+
+`logger(options)`
+
+* `options` – logger options, `{ mute: [] }` by default
+  * `mute` – array of task names to mute any output
