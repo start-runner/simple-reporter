@@ -1,14 +1,11 @@
 {
   "name": "start-simple-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple logger for Start",
   "keywords": [ "start", "start-logger" ],
   "homepage": "https://github.com/start-runner/simple-logger",
   "repository": "start-runner/simple-logger",
-  "contributors": [
-    "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
-    "Denis Koltsov <iam@mistadikay.com> (https://github.com/mistadikay)"
-  ],
+  "author": "Kir Belevich <kir@soulshine.in> (https://github.com/deepsweet)",
   "files": [ "build/" ],
   "main": "build/index.js",
   "peerDependencies": {
