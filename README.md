@@ -1,4 +1,4 @@
-[![npm](https://img.shields.io/npm/v/start-simple-logger.svg?style=flat-square)](https://www.npmjs.com/package/start-eslint)
+[![npm](https://img.shields.io/npm/v/start-simple-logger.svg?style=flat-square)](https://www.npmjs.com/package/start-simple-logger)
 [![travis](http://img.shields.io/travis/start-runner/simple-logger.svg?style=flat-square)](https://travis-ci.org/start-runner/simple-logger)
 [![deps](https://img.shields.io/gemnasium/start-runner/simple-logger.svg?style=flat-square)](https://gemnasium.com/start-runner/simple-logger)
 
