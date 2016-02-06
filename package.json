@@ -1,6 +1,6 @@
 {
   "name": "start-simple-logger",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple logger for Start",
   "keywords": [ "start", "start-logger" ],
   "homepage": "https://github.com/start-runner/simple-logger",
