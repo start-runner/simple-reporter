@@ -1,29 +1,29 @@
-# start-simple-logger
+# start-simple-reporter
 
-[![npm](https://img.shields.io/npm/v/start-simple-logger.svg?style=flat-square)](https://www.npmjs.com/package/start-simple-logger)
-[![travis](http://img.shields.io/travis/start-runner/simple-logger.svg?style=flat-square)](https://travis-ci.org/start-runner/simple-logger)
-[![coverage](https://img.shields.io/codecov/c/github/start-runner/simple-logger.svg?style=flat-square)](https://codecov.io/github/start-runner/simple-logger)
-[![deps](https://img.shields.io/gemnasium/start-runner/simple-logger.svg?style=flat-square)](https://gemnasium.com/start-runner/simple-logger)
+[![npm](https://img.shields.io/npm/v/start-simple-reporter.svg?style=flat-square)](https://www.npmjs.com/package/start-simple-reporter)
+[![travis](http://img.shields.io/travis/start-runner/simple-reporter.svg?style=flat-square)](https://travis-ci.org/start-runner/simple-reporter)
+[![coverage](https://img.shields.io/codecov/c/github/start-runner/simple-reporter.svg?style=flat-square)](https://codecov.io/github/start-runner/simple-reporter)
+[![deps](https://img.shields.io/gemnasium/start-runner/simple-reporter.svg?style=flat-square)](https://gemnasium.com/start-runner/simple-reporter)
 [![gitter](https://img.shields.io/badge/gitter-join_chat_%E2%86%92-00d06f.svg?style=flat-square)](https://gitter.im/start-runner/start)
 
-Simple logger for [Start](https://github.com/start-runner/start).
+Simple reporter for [Start](https://github.com/start-runner/start).
 
 ## Install
 
 ```
-npm i -S start-simple-logger
+npm i -S start-simple-reporter
 ```
 
 ## Usage
 
 ```js
 import start from 'start';
-import logger from 'start-simple-logger';
+import reporter from 'start-simple-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 
 export function cleanBuild() {
-    return start(logger())(
+    return start(reporter())(
         files('build/'),
         clean()
     );
@@ -43,7 +43,7 @@ See [documentation](https://github.com/start-runner/start#readme) for details.
 
 ## Arguments
 
-`logger(options)`
+`reporter(options)`
 
-* `options` – logger options, `{ mute: [] }` by default
+* `options` – reporter options, `{ mute: [] }` by default
   * `mute` – array of task names to mute any output
