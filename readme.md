@@ -1,9 +1,9 @@
 # start-simple-reporter
 
 [![npm](https://img.shields.io/npm/v/start-simple-reporter.svg?style=flat-square)](https://www.npmjs.com/package/start-simple-reporter)
-[![linux build](https://img.shields.io/travis/start-runner/simple-reporter.svg?label=linux&style=flat-square)](https://travis-ci.org/start-runner/simple-reporter)
-[![windows build](https://img.shields.io/appveyor/ci/start-runner/simple-reporter.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/start-runner/simple-reporter)
-[![coverage](https://img.shields.io/codecov/c/github/start-runner/simple-reporter.svg?style=flat-square)](https://codecov.io/github/start-runner/simple-reporter)
+[![linux build](https://img.shields.io/travis/start-runner/simple-reporter/master.svg?label=linux&style=flat-square)](https://travis-ci.org/start-runner/simple-reporter)
+[![windows build](https://img.shields.io/appveyor/ci/start-runner/simple-reporter/master.svg?label=windows&style=flat-square)](https://ci.appveyor.com/project/start-runner/simple-reporter)
+[![coverage](https://img.shields.io/codecov/c/github/start-runner/simple-reporter/master.svg?style=flat-square)](https://codecov.io/github/start-runner/simple-reporter)
 [![deps](https://img.shields.io/gemnasium/start-runner/simple-reporter.svg?style=flat-square)](https://gemnasium.com/start-runner/simple-reporter)
 
 Simple reporter for [Start](https://github.com/start-runner/start).
