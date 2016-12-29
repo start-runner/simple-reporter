@@ -10,8 +10,10 @@ Simple reporter for [Start](https://github.com/start-runner/start).
 
 ## Install
 
-```
-npm i -S start-simple-reporter
+```sh
+npm install --save-dev start-simple-reporter
+# or
+yarn add --dev start-simple-reporter
 ```
 
 ## Usage
@@ -22,12 +24,10 @@ import reporter from 'start-simple-reporter';
 import files from 'start-files';
 import clean from 'start-clean';
 
-export function cleanBuild() {
-    return start(reporter())(
-        files('build/'),
-        clean()
-    );
-}
+export const cleanBuild = () => start(reporter())(
+  files('build/'),
+  clean()
+);
 ```
 
 ```
